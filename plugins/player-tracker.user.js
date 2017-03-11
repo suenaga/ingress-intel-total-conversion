@@ -25,6 +25,8 @@ window.PLAYER_TRACKER_MAX_TIME = 3*60*60*1000; // in milliseconds
 window.PLAYER_TRACKER_MIN_ZOOM = 9;
 window.PLAYER_TRACKER_MIN_OPACITY = 0.3;
 window.PLAYER_TRACKER_LINE_COLOUR = '#FF00FD';
+window.PLAYER_TRACKER_LINE_COLOUR_ENL = '#7bff00';
+window.PLAYER_TRACKER_LINE_COLOUR_RES = '#00e1ff';
 
 
 // use own namespace for plugin
@@ -424,7 +426,7 @@ window.plugin.playerTracker.drawData = function() {
 
     var opts = {
       weight: 2-0.25*i,
-      color: PLAYER_TRACKER_LINE_COLOUR,
+      color: PLAYER_TRACKER_LINE_COLOUR_ENL,
       clickable: false,
       opacity: 1-0.2*i,
       dashArray: "5,8"
@@ -439,7 +441,7 @@ window.plugin.playerTracker.drawData = function() {
 
     var opts = {
       weight: 2-0.25*i,
-      color: PLAYER_TRACKER_LINE_COLOUR,
+      color: PLAYER_TRACKER_LINE_COLOUR_RES,
       clickable: false,
       opacity: 1-0.2*i,
       dashArray: "5,8"
